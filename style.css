@@ -70,7 +70,9 @@ p {
 }
 
 .about-paragraphs {
-  margin: 30px 0;
+  margin: 30px auto;
+  max-width: 950px;
+  display: block;
 }
 
 .about-paragraphs p {
@@ -87,4 +89,32 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .col {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  .col-sm-4 img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .email-link {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
